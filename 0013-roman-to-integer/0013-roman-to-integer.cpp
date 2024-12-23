@@ -1,71 +1,25 @@
 class Solution {
 public:
+    static unordered_map<char, int> values;
     int romanToInt(string s) {
-        int ans=0;
-        for(int i=0;i<s.length();i++){
-            char ch = s[i];
-            switch(ch){
-                case 'C':
-                    if(i+1<s.length()){
-                        if(s[i+1]!='D' and s[i+1]!='M'){
-                            ans += 100;
-                        }else if(s[i+1]=='D'){
-                            ans+= 400;
-                            i++;
-                        }else{
-                            ans += 900;
-                            i++;
-                        }
-                    } 
-                    else{
-                        ans+=100;
-                    }
-                    break;
-                case 'I':
-                    if(i+1<s.length()){
-                        if(s[i+1]!='V' and s[i+1]!='X'){
-                            ans += 1;
-                        }else if(s[i+1]=='V'){
-                            ans+= 4;
-                            i++;
-                        }else{
-                            ans += 9;
-                            i++;
-                        }
-                    }else{
-                        ans += 1;
-                    }
-                    break;
-                case 'X':
-                    if(i+1<s.length()){
-                        if(s[i+1]!='L' and s[i+1]!='C'){
-                            ans += 10;
-                        }else if(s[i+1]=='L'){
-                            ans+= 40;
-                            i++;
-                        }else{
-                            ans += 90;
-                            i++;
-                        }
-                    }else{
-                        ans += 10;
-                    }
-                    break;
-                case 'M':
-                    ans+= 1000;
-                    break;
-                case 'V':
-                    ans += 5;
-                    break;
-                case 'D':
-                    ans += 500;
-                    break;
-                case 'L':
-                    ans += 50;
-                    break; 
+        char lastSymbol = s[s.size() - 1];
+        int lastValue = values[lastSymbol];
+        int total = lastValue;
 
+        for (int i = s.size() - 2; i >= 0; i--) {
+            char currentSymbol = s[i];
+            int currentValue = values[currentSymbol];
+            if (currentValue < lastValue) {
+                total -= currentValue;
+            } else {
+                total += currentValue;
             }
+            lastValue = currentValue;
         }
-        return ans;
+        return total;
     }
 };
+
+unordered_map<char, int> Solution::values = {
+    {'M', 1000}, {'D', 500}, {'C', 100}, {'L', 50},
+    {'X', 10},   {'V', 5},   {'I', 1}};
