@@ -1,31 +1,26 @@
+#include <vector>
+#include <string>
+using namespace std;
+
 class Solution {
-private:
-
-    vector<string> generateALL(int n, int open, int close, string s, vector<string> &ans){
-        if(open==n and close ==n){
-            ans.push_back(s);
-            return ans;
-        }
-        if(open==0){
-            generateALL(n,open+1,close,s+"(",ans);
-        }else{
-        if(open < n){
-            generateALL(n,open+1,close,s+"(",ans);
-        }
-        if(close < open){
-            generateALL(n,open,close+1,s+")",ans);
-        }
-        }
-        return ans;
-    }
-
 public:
     vector<string> generateParenthesis(int n) {
-        if(n==1){
-            return {"()"};
+        vector<string> result;
+        backtrack(result, "", 0, 0, n);
+        return result;
+    }
+    
+    void backtrack(vector<string>& result, string current, int openCount, int closeCount, int n) {
+        if (openCount == n && closeCount == n) {
+            result.push_back(current);
+            return;
         }
-        vector<string> ans;
-        return generateALL(n,0,0,"",ans);
         
+        if (openCount < n) {
+            backtrack(result, current + "(", openCount + 1, closeCount, n);
+        }
+        if (closeCount < openCount) {
+            backtrack(result, current + ")", openCount, closeCount + 1, n);
+        }
     }
 };
