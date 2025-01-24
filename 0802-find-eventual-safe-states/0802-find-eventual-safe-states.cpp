@@ -1,38 +1,31 @@
 class Solution {
+    vector<int> safe;
+
 public:
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
         int n = graph.size();
-        vector<int> outdegree(n, 0);
-        vector<vector<int>> parents(n);
-        queue<int> q;
-
-        for (int node = 0; node < n; node++) {
-            outdegree[node] = graph[node].size();
-            if (outdegree[node] == 0) {
-                q.push(node);
-            }
-            for (int nei : graph[node]) {
-                parents[nei].push_back(node);
-            }
-        }
-
-        while (!q.empty()) {
-            int node = q.front();
-            q.pop();
-            for (int parent : parents[node]) {
-                outdegree[parent]--;
-                if (outdegree[parent] == 0) {
-                    q.push(parent);
-                }
-            }
-        }
-
         vector<int> res;
+        safe.assign(n, -1);
         for (int node = 0; node < n; node++) {
-            if (outdegree[node] <= 0) {
+            if (dfs(graph, node)) {
                 res.push_back(node);
             }
         }
         return res;
+    }
+
+private:
+    bool dfs(vector<vector<int>>& graph, int node) {
+        if (safe[node] != -1) {
+            return safe[node];
+        }
+        safe[node] = 0;
+        for (int nei : graph[node]) {
+            if (!dfs(graph, nei)) {
+                return false;
+            }
+        }
+        safe[node] = 1;
+        return true;
     }
 };
