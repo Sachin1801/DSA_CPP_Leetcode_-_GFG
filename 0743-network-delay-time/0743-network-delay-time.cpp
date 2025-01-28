@@ -1,42 +1,35 @@
 class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int n, int k) {
-        // Create adjacency list
-        unordered_map<int, vector<pair<int, int>>> adjacency;
-        for (const auto& time : times) {
-            int src = time[0];
-            int dst = time[1];
-            int t = time[2];
-            adjacency[src].emplace_back(dst, t);
+        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> > pq;
+        vector<vector<pair<int,int>>> Adj(n+1); 
+        for(auto time: times){
+            Adj[time[0]].push_back({time[2],time[1]}); //storing wt, v(i)
         }
-
-        // Priority queue for Dijkstra's algorithm (min-heap based on time)
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
-        pq.emplace(0, k);
-        set<int> visited;
-        int delays = 0;
-
-        while (!pq.empty()) {
-            auto [time, node] = pq.top();
+        vector<bool> visited(n+1,false);
+        pq.push({0,k});
+        int ans = 0;
+        while(!pq.empty()){
+            auto top = pq.top();
             pq.pop();
-
-            // Skip if the node has been visited
-            if (visited.count(node)) {
+            int wt = top.first;
+            int node = top.second;
+            if(visited[node])
                 continue;
-            }
-
-            visited.insert(node);
-            delays = max(delays, time);
-            for (const auto& neighbor : adjacency[node]) {
-                int neighborNode = neighbor.first;
-                int neighborTime = neighbor.second;
-                if (!visited.count(neighborNode)) {
-                    pq.emplace(time + neighborTime, neighborNode);
+            ans = max(ans,wt);
+            visited[node]=true;
+            for(auto nbr: Adj[node]){
+                int cost = nbr.first;
+                int tonode = nbr.second;
+                if(!visited[tonode]){
+                    pq.push({wt+cost,tonode});
                 }
             }
         }
-
-        // Check if all nodes have been visited
-        return visited.size() == n ? delays : -1;
+        for(int i=1;i<=n;i++){
+            if(!visited[i])
+                return -1;
+        }
+        return ans==0? -1: ans;
     }
 };
