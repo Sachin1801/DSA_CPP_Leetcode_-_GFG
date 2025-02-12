@@ -20,6 +20,8 @@ public:
         int maxsum = -1;
         for(auto p: m){
             auto pq = m[p.first];
+            if(pq.size()==1)
+                continue;
             int csum =0;
             csum += pq.top();
             pq.pop();
