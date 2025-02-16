@@ -1,50 +1,40 @@
 class Solution {
 public:
-    void solve(int index, vector<int>& arr, map<int,bool>& m,int n,bool& found){
-        if(index==arr.size()){ //we reach the end ...all numbers    placed
-            found = true;
-            return;
+    vector<int> constructDistancedSequence(int n) {
+        vector<int> result(2 * n - 1, 0);
+        vector<bool> used(n + 1, false);
+        backtrack(result, used, n, 0);
+        return result;
+    }
+
+private:
+    bool backtrack(vector<int>& result, vector<bool>& used, int n, int index) {
+        while (index < result.size() && result[index] != 0) {
+            index++;
         }
-        if(arr[index]!=-1){ //No space at this index...move ahead
-            solve(index+1,arr,m,n,found);
-            return;
+        if (index == result.size()) {
+            return true;
         }
-        // the index is vacant
-        for(int i=n; i>=1; i--){ 
-            if(m[i]==false){ //To check whether we have placed this number before or not
-                if(i!=1 && (index+i)<arr.size() && arr[index+i]==-1){
-                    arr[index]=arr[index+i]=i;
-                    m[i]= true;
-                    solve(index+1,arr,m,n,found);
-                    if(found==true){ //EARLY STOPPING ... the catch!
-                        return;  
-                    }
-                    arr[index]=arr[index+i]=-1; //backtrack
-                }
-                else if(i==1){
-                    arr[index] = 1;
-                    m[i]= true;
-                    solve(index+1,arr,m,n,found);
-                    if(found==true){ //EARLY STOPPING.... the catch
-                        return;
-                    }
-                    arr[index] = -1; //backtrack
-                }
-                m[i] = false; //backtrack
+
+        for (int i = n; i >= 1; i--) {
+            if (used[i]) continue;
+
+            if (i == 1) {
+                result[index] = 1;
+                used[1] = true;
+                if (backtrack(result, used, n, index + 1)) return true;
+                result[index] = 0;
+                used[1] = false;
+            } else if (index + i < result.size() && result[index + i] == 0) {
+                result[index] = i;
+                result[index + i] = i;
+                used[i] = true;
+                if (backtrack(result, used, n, index + 1)) return true;
+                result[index] = 0;
+                result[index + i] = 0;
+                used[i] = false;
             }
         }
-        return;
-    }
-    vector<int> constructDistancedSequence(int n) {
-        int arrSize = 2*n-1; // figure this out!
-        vector<int>arr(arrSize,-1);
-        map<int,bool>m;
-        for(int i = 1; i<=n; i++){
-            m.insert({i,false});
-        }
-        int index = 0;
-        bool found = false; // a flag variable we use for early stopping
-        solve(index,arr,m,n,found);
-        return arr;
+        return false;
     }
 };
