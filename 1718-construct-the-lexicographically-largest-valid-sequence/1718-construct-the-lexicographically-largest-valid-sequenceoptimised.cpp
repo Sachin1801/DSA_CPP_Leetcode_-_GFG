@@ -1,41 +1,40 @@
 class Solution {
-private:
-    bool backtrack(int i, vector<int>& ans, vector<int> &marked, int n) {
-        if (i == ans.size())
-            return true;
-
-        if (ans[i] != 0)
-            return backtrack(i + 1, ans, marked, n);
-
-        for (int j = n; j > 0; j--) {
-            // Validation check
-            if (marked[j]) continue;
-
-            if (j > 1 && (i + j >= ans.size() || ans[i + j] != 0))
-                continue;
-
-            // Try placing j
-            marked[j] = 1;
-            ans[i] = j;
-            if (j > 1) ans[i + j] = j;
-
-            // Recursive step
-            if (backtrack(i + 1, ans, marked, n))
-                return true;
-
-            // Backtrack
-            marked[j] = 0;
-            ans[i] = 0;
-            if (j > 1) ans[i + j] = 0;
-        }
-        return false;
-    }
-
 public:
     vector<int> constructDistancedSequence(int n) {
-        vector<int> ans(2 * n - 1, 0);
-        vector<int> marked(n + 1, 0); // Replace unordered_set with a vector
-        backtrack(0, ans, marked, n);
-        return ans;
+        vector<int> result(2 * n - 1, 0);
+        vector<bool> used(n + 1, false);
+        backtrack(result, used, n, 0);
+        return result;
+    }
+
+private:
+    bool backtrack(vector<int>& result, vector<bool>& used, int n, int index) {
+        while (index < result.size() && result[index] != 0) {
+            index++;
+        }
+        if (index == result.size()) {
+            return true;
+        }
+
+        for (int i = n; i >= 1; i--) {
+            if (used[i]) continue;
+
+            if (i == 1) {
+                result[index] = 1;
+                used[1] = true;
+                if (backtrack(result, used, n, index + 1)) return true;
+                result[index] = 0;
+                used[1] = false;
+            } else if (index + i < result.size() && result[index + i] == 0) {
+                result[index] = i;
+                result[index + i] = i;
+                used[i] = true;
+                if (backtrack(result, used, n, index + 1)) return true;
+                result[index] = 0;
+                result[index + i] = 0;
+                used[i] = false;
+            }
+        }
+        return false;
     }
 };
