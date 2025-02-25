@@ -1,13 +1,13 @@
 class Solution {
 private:
 
-void dfs(string &s, int src, vector<int> &idx, set<int> &visited, vector<char> &chars){
-    visited.insert(src);
+void dfs(string &s, int src, vector<int> &idx, vector<bool> &visited, vector<char> &chars){
+    visited[src]=true;
     idx.push_back(src);
     chars.push_back(s[src]);
 
     for(auto nbr: adj[src]){
-        if(visited.count(nbr)==0) dfs(s,nbr,idx,visited,chars);
+        if(!visited[nbr]) dfs(s,nbr,idx,visited,chars);
     }
     return;
 }
@@ -21,9 +21,9 @@ vector<vector<int>> adj;
             adj[p[0]].push_back(p[1]);
             adj[p[1]].push_back(p[0]);
         }
-        set<int> visited;
+        vector<bool> visited(s.size(),false);
         for(int i=0;i<s.size();i++){
-            if(visited.count(i)==0){
+            if(!visited[i]){
                 vector<int> idx;
                 vector<char> chars;
                 dfs(s,i,idx,visited,chars);
