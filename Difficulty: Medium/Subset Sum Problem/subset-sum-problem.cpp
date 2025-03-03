@@ -5,32 +5,32 @@ using namespace std;
 
 
 // } Driver Code Ends
+
 // User function template for C++
 
 class Solution {
     private:
-        
-        bool check(int i, int sum, int k ,vector<int> &v){
-    //base case
-    if(sum==k) return true;
-    if(i==v.size()) return false;
-
-    //recvursive case
-    if(sum + v[i] <=k){
-        bool c1 = check(i+1,sum+v[i],k,v);
-        if(c1) return true;
-    }
-    bool c2 = check(i+1,sum,k,v);
-    return c2;
-}
+        bool f(int i, int target, vector<int> &arr, vector<vector<int>> &dp){
+            if(target==0) return dp[i][target]=1;
+            if(i==0) return dp[i][target] = arr[0]==target;
+            if(dp[i][target]!=-1) return dp[i][target];
+            bool notTake = f(i-1,target,arr,dp);
+            
+            bool Take=false;
+            if(target - arr[i] >= 0) Take = f(i-1,target-arr[i],arr,dp);
+            
+            return dp[i][target]= Take|notTake;
+        }
     
   public:
     bool isSubsetSum(vector<int>& arr, int target) {
         // code here
-        return check(0,0,target,arr);
-        
+        int n = arr.size();
+        vector<vector<int>> dp(n,vector<int>(target+1,-1));
+        return f(n-1,target,arr,dp);
     }
 };
+
 
 //{ Driver Code Starts.
 
