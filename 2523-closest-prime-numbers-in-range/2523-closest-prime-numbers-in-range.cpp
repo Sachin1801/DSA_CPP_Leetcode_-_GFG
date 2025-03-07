@@ -2,7 +2,6 @@ class Solution {
 private:
     bool isPrime(int n){
         if(n<=1) return false;
-        
         for(int i =2; i*i <=n;i++){
             if(n%i==0) return false;
         }
@@ -11,11 +10,13 @@ private:
 
 public:
     vector<int> closestPrimes(int left, int right) {
+        if(left <=2 && right>=3) return {2,3};
         vector<int> ans(2,-1);
         int sec_last = -1;
         int last = -1;
         int min_diff = INT_MAX;
         for(int i = left;i<=right;i++){
+            if(i%2==0) continue;
             if(isPrime(i)){
                 if(sec_last==-1){
                     sec_last = i; 
