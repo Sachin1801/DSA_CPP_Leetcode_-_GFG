@@ -1,34 +1,35 @@
 class Solution {
 private:
-    int count(long long curr, long long n){
-        long long res = 0;
-        long long nbr = curr +1;
-        while(curr <=n){
-            res += min(nbr,n+1) - curr;
+    int Count(long curr, long next, int n){
+        int CountNum = 0;
+
+        while(curr<=n){
+            CountNum += (next - curr);
+
             curr *=10;
-            nbr *=10;
+            next *=10;
+            next = min(next, (long)n+1);
         }
-        return res;
+        return CountNum;
     }
 
 public:
     int findKthNumber(int n, int k) {
-        int curr =1;
-        int i =1;
+        if(k==1) return 1;
 
-        while(i<k){
-            int steps = count(curr,n);
-            if(i + steps <=k){
-                curr +=1;
-                i += steps;
-            }
-            else{
-                curr *= 10;
-                i++;
+        int curr =1 ;
+        k-=1;
+        while(k>0){
+            int count = Count(curr,curr+1,n);
+
+            if(count <= k){
+                k-= count;
+                curr++;
+            }else{
+                curr *=10;
+                k--;
             }
         }
-
-
         return curr;
     }
 };
