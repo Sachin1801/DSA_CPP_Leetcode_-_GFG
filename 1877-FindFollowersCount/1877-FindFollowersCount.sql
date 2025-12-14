@@ -1,0 +1,7 @@
+-- Last updated: 12/14/2025, 4:17:12 PM
+# Write your MySQL query statement below
+
+SELECT user_id, COUNT(DISTINCT follower_id) as followers_count
+FROM Followers
+GROUP BY user_id
+ORDER BY user_id ASC;
