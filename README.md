@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Dynamic Programming
 |  |
 | ------- |
+| [0072-edit-distance](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0115-distinct-subsequences) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0312-burst-balloons](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0312-burst-balloons) |
@@ -35,5 +36,6 @@ Collection of LeetCode questions to ace the coding interview!
 ## String
 |  |
 | ------- |
+| [0072-edit-distance](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0115-distinct-subsequences) |
 <!---LeetCode Topics End-->
