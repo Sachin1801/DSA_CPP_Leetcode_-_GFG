@@ -1,27 +1,18 @@
 class Solution {
 public:
-
-    int f(int i, int buy, int cap, vector<int> &prices, vector<vector<vector<int>>> &dp){
-        if(cap==0) return 0;
-        if(i >= prices.size()) return 0;
-
-        if(dp[i][buy][cap]!=-1) return dp[i][buy][cap];
-
-        int profit = 0;
-        //case 1 : can buy
-        if(buy ==1 ){
-            profit = max( f(i+1, 0,cap, prices,dp) - prices[i], f(i+1, buy, cap, prices, dp));
-        }else{
-            //case 2 : can sell
-            profit = max( prices[i] + f(i+1,1, cap-1,prices, dp ), f(i+1, buy, cap, prices, dp));
-        }
-        return dp[i][buy][cap] = profit;
-    }
-
     int maxProfit(vector<int>& prices) {
-        int n = prices.size();
+        int buy1 = INT_MIN;
+        int sell1 = 0;
+        int buy2 = INT_MIN;
+        int sell2 = 0;
 
-        vector<vector<vector<int>>> dp(n,vector<vector<int>>(2,vector<int>(3,-1)));
-        return f(0,1,2,prices,dp);
+        for (int price : prices) {
+            buy1 = max(buy1, -price);
+            sell1 = max(sell1, buy1 + price);
+            buy2 = max(buy2, sell1 - price);
+            sell2 = max(sell2, buy2 + price);
+        }
+
+        return sell2;
     }
 };
