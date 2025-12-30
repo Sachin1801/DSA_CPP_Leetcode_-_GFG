@@ -38,4 +38,17 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0072-edit-distance](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0115-distinct-subsequences) |
+| [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
+## Hash Table
+|  |
+| ------- |
+| [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
+## Backtracking
+|  |
+| ------- |
+| [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
 <!---LeetCode Topics End-->
