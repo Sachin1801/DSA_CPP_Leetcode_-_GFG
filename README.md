@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0312-burst-balloons](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0312-burst-balloons) |
+| [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 | [1277-count-square-submatrices-with-all-ones](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1277-count-square-submatrices-with-all-ones) |
 ## Dynamic Programming
 |  |
@@ -32,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Matrix
 |  |
 | ------- |
+| [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 | [1277-count-square-submatrices-with-all-ones](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1277-count-square-submatrices-with-all-ones) |
 ## String
 |  |
@@ -43,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
+| [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 ## Backtracking
 |  |
 | ------- |
@@ -51,4 +54,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
+## Math
+|  |
+| ------- |
+| [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 <!---LeetCode Topics End-->
