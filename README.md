@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0072-edit-distance](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0072-edit-distance) |
 | [0115-distinct-subsequences](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0115-distinct-subsequences) |
 | [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
+| [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
 ## Hash Table
 |  |
 | ------- |
@@ -60,4 +61,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
+## Greedy
+|  |
+| ------- |
+| [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
 <!---LeetCode Topics End-->
