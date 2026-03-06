@@ -45,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0115-distinct-subsequences](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0115-distinct-subsequences) |
 | [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
+| [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
 ## Hash Table
 |  |
 | ------- |
