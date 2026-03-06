@@ -1,104 +1,64 @@
-class Node {
-private:
-    int key;
-    int val;
-    Node* next;
-    Node* prev;
+#include<list>
+// class Node{
+//     private:
+//         pair<int,int> val;
+//         Node* next;
+    
+//     public:
 
-public:
-    Node(int key, int val) {
-        this->key = key;
-        this->val = val;
-        next = nullptr;
-        prev = nullptr;
-    }
-    friend class LRUCache;
-};
+//     Node(int key, int value, Node* next = nullptr) : val{key,value}, next(next) {}
+// };
+
+// class ListNode{
+//     private:
+//         Node* root;
+//         int size;
+
+//     public:
+//         ListNode() : root(nullptr), size(0) {}
+// }
+
 
 class LRUCache {
 private:
-    unordered_map<int, Node*> m;
-    Node* head;
-    Node* tail;
-    int mySize;
-
-    void deleteNode(Node* n) {
-        Node* prevNode = n->prev;
-        Node* nextNode = n->next;
-        n->prev = nullptr;
-        n->next = nullptr;
-        prevNode->next = nextNode;
-        nextNode->prev = prevNode;
-    }
-
-    void insertAtHead(Node* n) {
-        Node* headNext = head->next;
-        n->next = headNext;
-        n->prev = head;
-        head->next = n;
-        headNext->prev = n;
-    }
+    int capacity;
+    list<pair<int,int>> lru;
+    unordered_map<int, list<pair<int,int>>::iterator> cache; // key -> iterator
 
 public:
-    LRUCache(int capacity) {
-        head = new Node(-1, -1);
-        tail = new Node(-1, -1);
-        head->next = tail;
-        tail->prev = head;
-        mySize = capacity;
-        m.clear();
-    }
-
+    LRUCache(int capacity) : capacity(capacity) {}
+    
     int get(int key) {
-        if (m.find(key)!=m.end()) {
-            Node* temp = m[key];
-            deleteNode(temp);
-            insertAtHead(temp);
-            return temp->val;
-        } else {
-            return -1;
-        }
-    }
+        // what if the there is no node in list ? 
+        //value not present in the cache
+        if(cache.find(key) == cache.end()) return -1;
 
+        auto it = cache[key];
+        lru.splice(lru.begin(), lru, it); // gets the key at the front of the list
+        cache[key] = lru.begin();
+
+        return lru.begin()->second;
+    }
+    
     void put(int key, int value) {
-        auto it = m.find(key);
-        if (it!=m.end()) {
-            //value present in map
-            Node* temp = m[key];
-            temp->val = value;
-            deleteNode(temp);
-            insertAtHead(temp);
-            m[key]=temp;
-        } else {
-            if (m.size() < mySize) {
-                // capacity is still there
-                // value is not present in the map
-                Node* n = new Node(key, value);
-                m[key]=n;
-                insertAtHead(n);
-
-            } else {
-                // no capacity left
-                Node* temp = tail->prev;
-                m.erase(temp->key);
-                deleteNode(temp);
-
-                Node* n = new Node(key, value);
-                m[key] = n;
-                insertAtHead(n);
-            }
+        if(cache.find(key) != cache.end()){
+            auto it = cache[key];
+            it->second = value;
+            lru.splice(lru.begin(), lru, it);
+            cache[key] = lru.begin();
+            return;
         }
-    }
 
-    ~LRUCache() {
-        Node* current = head->next;
-        while (current != tail) {
-            Node* next = current->next;
-            delete current;
-            current = next;
+        // check if the capacity is full
+        if(lru.size() == capacity){
+            //remove from the back
+            cache.erase(lru.back().first);
+            lru.pop_back();
         }
-        delete head;
-        delete tail;
+
+        lru.push_front({key,value});
+        cache[key] = lru.begin();
+
     }
 };
 
