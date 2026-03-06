@@ -49,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Hash Table
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0146-lru-cache) |
 | [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0961-n-repeated-element-in-size-2n-array) |
@@ -69,4 +70,16 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
+## Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0146-lru-cache) |
+## Design
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0146-lru-cache) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
