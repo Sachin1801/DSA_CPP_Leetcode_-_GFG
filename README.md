@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0001-two-sum) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0312-burst-balloons](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0312-burst-balloons) |
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
@@ -49,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0001-two-sum) |
 | [0146-lru-cache](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0146-lru-cache) |
 | [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
