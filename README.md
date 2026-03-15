@@ -71,6 +71,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
+| [1622-fancy-sequence](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1622-fancy-sequence) |
 ## Greedy
 |  |
 | ------- |
@@ -84,6 +85,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0146-lru-cache) |
+| [1622-fancy-sequence](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1622-fancy-sequence) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -93,4 +95,8 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [1306-jump-game-iii](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1306-jump-game-iii) |
 | [1345-jump-game-iv](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1345-jump-game-iv) |
+## Segment Tree
+|  |
+| ------- |
+| [1622-fancy-sequence](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1622-fancy-sequence) |
 <!---LeetCode Topics End-->
