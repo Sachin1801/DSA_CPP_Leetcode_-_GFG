@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1192-critical-connections-in-a-network](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1192-critical-connections-in-a-network) |
+| [1306-jump-game-iii](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1306-jump-game-iii) |
 ## Graph
 |  |
 | ------- |
@@ -24,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1277-count-square-submatrices-with-all-ones](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1277-count-square-submatrices-with-all-ones) |
+| [1306-jump-game-iii](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1306-jump-game-iii) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 ## Dynamic Programming
 |  |
@@ -84,4 +86,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0146-lru-cache) |
+## Breadth-First Search
+|  |
+| ------- |
+| [1306-jump-game-iii](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1306-jump-game-iii) |
 <!---LeetCode Topics End-->
