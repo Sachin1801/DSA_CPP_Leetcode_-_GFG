@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1306-jump-game-iii](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1306-jump-game-iii) |
 | [1345-jump-game-iv](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1345-jump-game-iv) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -42,6 +43,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 | [1277-count-square-submatrices-with-all-ones](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1277-count-square-submatrices-with-all-ones) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 ## String
 |  |
 | ------- |
@@ -72,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 | [1622-fancy-sequence](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1622-fancy-sequence) |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 ## Greedy
 |  |
 | ------- |
@@ -99,4 +102,16 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1622-fancy-sequence](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1622-fancy-sequence) |
+## Sorting
+|  |
+| ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+## Prefix Sum
+|  |
+| ------- |
+| [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 <!---LeetCode Topics End-->
