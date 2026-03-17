@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1345-jump-game-iv](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1345-jump-game-iv) |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+| [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -52,6 +53,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0756-pyramid-transition-matrix](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0756-pyramid-transition-matrix) |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
+| [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
 ## Hash Table
 |  |
 | ------- |
@@ -61,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0840-magic-squares-in-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0840-magic-squares-in-grid) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1345-jump-game-iv](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1345-jump-game-iv) |
+| [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
 ## Backtracking
 |  |
 | ------- |
@@ -89,6 +92,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0146-lru-cache](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0146-lru-cache) |
 | [1622-fancy-sequence](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1622-fancy-sequence) |
+| [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -110,8 +114,13 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+| [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
 ## Prefix Sum
 |  |
 | ------- |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+## Ordered Set
+|  |
+| ------- |
+| [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
 <!---LeetCode Topics End-->
