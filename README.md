@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1727-largest-submatrix-with-rearrangements) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
+| [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -47,6 +48,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1536-minimum-swaps-to-arrange-a-binary-grid) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1727-largest-submatrix-with-rearrangements) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+| [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 ## String
 |  |
 | ------- |
@@ -123,6 +125,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+| [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 ## Ordered Set
 |  |
 | ------- |
