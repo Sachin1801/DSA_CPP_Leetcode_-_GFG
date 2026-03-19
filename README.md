@@ -136,4 +136,5 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1115-print-foobar-alternately](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1115-print-foobar-alternately) |
+| [1116-print-zero-even-odd](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1116-print-zero-even-odd) |
 <!---LeetCode Topics End-->
