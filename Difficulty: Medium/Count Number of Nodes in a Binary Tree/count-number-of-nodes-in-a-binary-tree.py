@@ -15,31 +15,19 @@ class Solution:
         #code here
         if not root:
             return 0
-        if not root.left and not root.right:
-            return 1
         
-        total = 1
-        q = deque({root})
         
-        while q:
-            node = q.popleft()
+        left_h, right_h = 0,0
+        l, r = root, root
+        
+        while l:
+            left_h +=1 
+            l = l.left
+        while r:
+            right_h += 1
+            r = r.right
+        
+        if left_h == right_h:
+            return (1 << left_h) - 1  # 2^h-1
             
-            # if we have both children : just push in queue
-            #     and total+=2
-            if node.left and node.right:
-                q.append(node.left)
-                q.append(node.right)
-                total += 2
-            elif node.left and not node.right:
-                total+=1
-                break
-            else:
-                break
-            # if we have only one children 
-                # add total +=1 and break
-            
-            # if we have no children
-                # break
-        
-        return total
-                
+        return 1 + self.countNodes(root.left) + self.countNodes(root.right)
