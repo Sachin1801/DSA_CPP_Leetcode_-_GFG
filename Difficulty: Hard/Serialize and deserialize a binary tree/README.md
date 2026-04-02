@@ -1,0 +1,13 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1">Serialize and deserialize a binary tree</a></h2><h3>Difficulty Level : Difficulty: Hard</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size: 14pt;">You are given the <strong>root</strong> of a binary tree. You have to perform <strong>Serialization</strong> and <strong>Deserialization</strong>. Serialization is to store a tree in an array so that it can be later restored and deserialization is reading tree back from the array. Complete the functions:</span></p>
+<ul>
+<li><span style="font-size: 14pt;"><strong>serialize() :</strong> stores the tree into an array&nbsp;and returns the array.</span></li>
+<li><span style="font-size: 14pt;"><strong>deSerialize() :</strong>&nbsp;deserializes the array to the tree and returns the root of the tree.</span></li>
+</ul>
+<p><span style="font-size: 14pt;"><strong>Note:&nbsp;</strong>Multiple nodes can have the same data and the node values are<strong>&nbsp;</strong>always&nbsp;positive integers. Your code will be correct if the tree returned by&nbsp;<strong>deSerialize(serialize(input_tree))</strong> is same as the input tree. Driver code will print the level order traversal of the tree returned by deSerialize(serialize(input_tree)).</span></p>
+<p><span style="font-size: 14pt;"><strong>Examples :</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>root = [1, 2, 3] &nbsp; &nbsp; &nbsp; </span><br><span style="font-size: 14pt;"><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/908076/Web/Other/blobid1_1754980863.webp" width="245" height="151">
+<strong>Output: </strong>[1, 2, 3]
+</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input:</strong> root = [10, 20, 30, 40, 60, N, N] <br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/908076/Web/Other/blobid0_1754980083.webp" width="249" height="198">
+<strong>Output: </strong>[10, 20, 30, 40, 60]</span></pre>
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>1 ≤ number of nodes ≤ 10<sup>4</sup><br>1 ≤ node-&gt;data ≤ 10<sup>9</sup></span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Paytm</code>&nbsp;<code>Flipkart</code>&nbsp;<code>Accolite</code>&nbsp;<code>Amazon</code>&nbsp;<code>Microsoft</code>&nbsp;<code>MAQ Software</code>&nbsp;<code>Adobe</code>&nbsp;<code>Linkedin</code>&nbsp;<code>Quikr</code>&nbsp;<code>Yahoo</code>&nbsp;<code>InMobi</code>&nbsp;<code>NPCI</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Tree</code>&nbsp;<code>Data Structures</code>&nbsp;
