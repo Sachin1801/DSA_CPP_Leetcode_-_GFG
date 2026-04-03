@@ -4,9 +4,9 @@
 <p><span style="font-size: 14pt;"><strong>Examples:</strong></span></p>
 <pre><span style="font-size: 14pt;"><strong>Input: </strong>mat[][] = [[2, 1, 0, 2, 1], [1, 0, 1, 2, 1], [1, 0, 0, 2, 1]]
 <strong>Output: </strong>2
-<strong>Explanation: </strong>Oranges at positions (0,0), (0,3), (1,3), and (2,3) will rot adjacent fresh oranges in successive time frames.<br>All fresh oranges become rotten after 2 units of time.</span></pre>
+<strong>Explanation: <br><img src="https://media.geeksforgeeks.org/img-practice/prod/addEditProblem/701754/Web/Other/blobid2_1773817347.jpg" width="521" height="146"><br></strong>Oranges at positions (0,0), (0,3), (1,3), and (2,3) will rot adjacent fresh oranges in successive time frames.<br>All fresh oranges become rotten after 2 units of time.</span></pre>
 <pre><span style="font-size: 14pt;"><strong>Input: </strong>mat[][] = [[2, 1, 0, 2, 1], [0, 0, 1, 2, 1], [1, 0, 0, 2, 1]]
 <strong>Output: </strong>-1
 <strong>Explanation: </strong>Oranges at positions (0,0), (0,3), (1,3), and (2,3) rot some fresh oranges,<br>but the fresh orange at (2,0) can never be reached, so not all oranges can rot.
 </span></pre>
-<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>1 ≤ mat.size() ≤ 500<br>1 ≤ mat[0].size() ≤ 500<br>mat[i][j] = {0, 1, 2}&nbsp;</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Flipkart</code>&nbsp;<code>Accolite</code>&nbsp;<code>Amazon</code>&nbsp;<code>Microsoft</code>&nbsp;<code>OYO Rooms</code>&nbsp;<code>Samsung</code>&nbsp;<code>MakeMyTrip</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Matrix</code>&nbsp;<code>Graph</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Queue</code>&nbsp;
+<p><span style="font-size: 14pt;"><strong>Constraints:</strong><br>1 ≤ mat.size() ≤ 500<br>1 ≤ mat[0].size() ≤ 500<br>mat[i][j] = {0, 1, 2}&nbsp;</span></p></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Flipkart</code>&nbsp;<code>Accolite</code>&nbsp;<code>Amazon</code>&nbsp;<code>Microsoft</code>&nbsp;<code>OYO Rooms</code>&nbsp;<code>Samsung</code>&nbsp;<code>MakeMyTrip</code>&nbsp;<code>NPCI</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Matrix</code>&nbsp;<code>Graph</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Queue</code>&nbsp;
