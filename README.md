@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3532-path-existence-queries-in-a-graph-i) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -71,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1345-jump-game-iv](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1345-jump-game-iv) |
 | [2353-design-a-food-rating-system](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/2353-design-a-food-rating-system) |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3532-path-existence-queries-in-a-graph-i) |
 ## Backtracking
 |  |
 | ------- |
@@ -139,4 +141,16 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [1115-print-foobar-alternately](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1115-print-foobar-alternately) |
 | [1116-print-zero-even-odd](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/1116-print-zero-even-odd) |
+## Binary Search
+|  |
+| ------- |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3532-path-existence-queries-in-a-graph-i) |
+## Union-Find
+|  |
+| ------- |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3532-path-existence-queries-in-a-graph-i) |
+## Graph Theory
+|  |
+| ------- |
+| [3532-path-existence-queries-in-a-graph-i](https://github.com/Sachin1801/DSA_CPP_Leetcode_-_GFG/tree/master/3532-path-existence-queries-in-a-graph-i) |
 <!---LeetCode Topics End-->
